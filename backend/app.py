@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/api/message")
 def message():
     return jsonify({"message": "Hello from Prem's Backend API - This message is sent from the backend service"})
 
